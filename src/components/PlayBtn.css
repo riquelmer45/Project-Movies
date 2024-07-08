@@ -1,0 +1,68 @@
+.banner .trailer {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  z-index: 1000;
+}
+
+.banner .trailer.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.trailer p {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.banner .playBtn {
+  position: relative;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  transition: 1s;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer !important;
+}
+
+.banner .playBtn ion-icon {
+  padding-left: 8px;
+  font-size: 4rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.banner .playBtn::before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  content: "";
+  background: transparent;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  animation: button 1s linear infinite;
+}
+
+@keyframes button {
+  0%,
+  100% {
+    opacity: 0.3;
+    filter: blur(4px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(10px);
+  }
+}
