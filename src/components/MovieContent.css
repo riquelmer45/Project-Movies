@@ -54,3 +54,13 @@
   color: #ffffff;
   margin: 20px 0 30px;
 }
+
+@media (max-width: 600px) {
+  .banner .content h4 {
+    font-size: 20px;
+  }
+
+  .banner .content h4 span {
+    padding: 0 5px;
+  }
+}
