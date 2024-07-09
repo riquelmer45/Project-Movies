@@ -1,9 +1,9 @@
 [
   {
     "_id": 1,
-    "titleImg": "../assets/movies/transformer-title.png",
-    "bgImg": "../assets/movies/bg-transformer.jpg",
-    "previewImg": "../assets/movies/transformer.jpg",
+    "titleImg": "/assets/movies/transformer-title.png",
+    "bgImg": "/assets/movies/bg-transformer.jpg",
+    "previewImg": "/assets/movies/transformer.jpg",
     "video": "https://www.youtube.com/embed/TxPNrwbuxN0",
     "title": "Transformer",
     "year": "2023",
